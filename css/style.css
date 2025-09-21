@@ -275,7 +275,31 @@ main .nuestro-equipo .integrante p{
     margin-top: 0;
 }
 
+main .dudas-main{
+    background-color: #F5EBE0;
+}
 
+
+main .dudas-main .pregunta .pregunta-titulo{
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+}
+main .dudas-main .pregunta .pregunta-titulo:hover {
+  color: #0077cc;
+}
+main .dudas-main .pregunta .respuesta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
 
 
 /*footer*/
