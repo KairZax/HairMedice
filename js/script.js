@@ -11,3 +11,6 @@ document.addEventListener('touchmove', (e) => {
   e.preventDefault(); // evita el scroll mientras arrastras
 });
 
+
+
+

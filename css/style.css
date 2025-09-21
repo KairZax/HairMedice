@@ -110,6 +110,7 @@ main .tratamientos-main {
 main .tratamientos-main .tarjetas-tratamientos {
     text-align: center;
     background-color: white;
+    min-height: 20vh;
     width: 50%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -225,15 +226,53 @@ main .nosotros-main .info {
 
 main .nosotros-main .info h2 {
     margin-top: 0;
-    
+    font-size: xx-large;
 }
 
 main .nosotros-main .img-nosotros {
+    margin-bottom: 20px;
     width: 100%;
     text-align: center;
 }
 main .nosotros-main .img-nosotros img{
-    max-width: 80%;
+    width: 300px;
+    height: 200px;
+    border: white solid 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+/*nuestro equipo*/
+
+main .nuestro-equipo{
+    text-align: center;
+    background-color:#ffffff;
+    padding-top: 20px;
+}
+
+main .nuestro-equipo h2{
+    font-size: xx-large;
+}
+
+
+
+main .nuestro-equipo .integrante{
+        
+}
+
+
+main .nuestro-equipo .integrante img{
+    width: 30vh;
+    height: 40vh;
+    border: white solid 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+main .nuestro-equipo .integrante h3{
+    margin: 0;
+}
+main .nuestro-equipo .integrante p{
+    margin-top: 0;
 }
 
 
@@ -244,14 +283,21 @@ main .nosotros-main .img-nosotros img{
 footer {
     grid-area: footer;
     background-color: #373435;
-    color: #D2AE6D;
+    color: #4c402a;
 }
+
 
 footer .logo-footer {
     text-align: center;
 }
 
-footer .contacto {}
+footer .logo-footer img{
+    max-width: 40vh;
+}
+
+footer .contacto {
+    margin-left: 2vh;
+}
 
 footer .contacto div {
     display: flex;
@@ -267,7 +313,7 @@ footer .contacto img {
 
 footer .contacto div a {
     text-decoration: none;
-    color: #D2AE6D;
+    color: #4c402a;
 }
 
 
