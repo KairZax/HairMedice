@@ -1,245 +1,281 @@
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-    body{
-        margin: 0;
-        display: grid;
-        grid-template-columns:1fr;
-        grid-template-rows: 3fr;
-        grid-template-areas: 
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas:
         "header"
         "main"
         "footer";
-        font-family:"Manrope", sans-serif;/*prueba*/
-    }
+    font-family: 'Poppins', sans-serif;
+    /*prueba*/
+}
+
+h1,h2,h3 {
+    color: #4A3A2A;
+    font-weight: 600;
+}
+
+p {
+    color: #6E6A66;
+    font-weight: 300;
+}
 
 
 
 
 
-    /*header*/
-    header{
-        grid-area: header;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    }
+/*header*/
+header {
+    grid-area: header;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
 
 
-    header div img{
-        height: 100px;
-        width: 150px;
-    }
-
-
-
+header div img {
+    height: 11vh;
+    width: 150px;
+}
 
 
 
 
 
 
-    /*main*/
-    main {
-        grid-area: main;
-        
-    }
-
-    main .banner {
-        background-image: url('../images/Banner.png');
-        background-size: cover;
-        background-position: center;
-        padding: 20%;
-
-    }
-
-    main .banner h1 {
-        margin: 0;
-    }
-
-    main .banner button {
-        border-radius: 100px;
-        border: 0;
-        background-color: white;
-        font-size: 100%;
-        padding: 10px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-        transition: background-color 0.3s ease, color 0.3s ease;
-
-    }
-
-    main .banner button:hover {
-        background-color: green;
-    }
-
-    main .banner a {
-        text-decoration: none;
-        color: black;
-    }
-
-    main .tratamientos-main {
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(246, 231, 213);
-        align-items: center;
-        width: 100%;
-
-    }
-
-    main .tratamientos-main  .tarjetas-tratamientos {
-        text-align: center;
-        background-color: white;
-        width: 50%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        border: 0;
-        font-size: 100%;
-        padding: 30px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-
-    }
-
-    main .tratamientos-main .tarjetas-tratamientos a {
-        text-decoration: none;
-        color: white;
-        background-color: #D2AE6D;
-        border-radius: 10%;
-        padding: 10px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-        margin: 50px;
-    }
-
-    .implante-cirugia-main {
-        background-color: #ffffff;
-        margin-top: 10px;
-        width: 100%;
-    }
-    .implante-cirugia-main .info-implante-cirugia-main{
-        text-align: center;
-        margin-bottom: 30px;
-        padding-inline:25% ;
-    }
-    .implante-cirugia-main .info-implante-cirugia-main a{
-        border-radius: 100px;
-        border: 0;
-        background-color: white;
-        font-size: 100%;
-        padding: 10px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-        transition: background-color 0.3s ease, color 0.3s ease;
-        text-decoration: none;
-        color:#000
-    }
-
-    .implante-cirugia-main .antesdespues-implante-cirugia-main {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        aspect-ratio: 4/3;
-        margin-bottom: 0;
-    }
-
-    .implante-cirugia-main .antesdespues-implante-cirugia-main img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .implante-cirugia-main .antesdespues-implante-cirugia-main .after {
-        clip-path: inset(0 50% 0 0);
-    }
-
-    .implante-cirugia-main .antesdespues-implante-cirugia-main .slider {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 4px;
-        height: 100%;
-        background: #fff;
-        cursor: ew-resize;
-        z-index: 2;
-        transform: translateX(-50%);
-        user-select: none; 
-        -webkit-user-drag: none; 
-
-    }
-
-    .antesdespues-implante-cirugia-main .slider::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 30px;
-        height: 30px;
-        background: #fff;
-        border: 2px solid #000;
-        border-radius: 50%;
-        transform: translate(-50%, -50%);
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    }
 
 
 
-    main .nosotros-main{
-        width: 100%;
-        background-color: #4e4a44;
-       padding-top: 20px;
-       color: white;
-    }
-    main .nosotros-main .info{
-        text-align: center;
-        padding-inline: 25%;
-    }
-    main .nosotros-main .info h2{
-        margin-top: 0;
-    }
-    main .nosotros-main .img-nosotros{
-        height: 50%;
-        width: 50%;
-    }
+/*main*/
+main {
+    grid-area: main;
+
+}
+
+main .banner {
+    background-image: url('../images/Banner.png');
+    background-size: cover;
+    background-position: center;
+    max-width: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 89vh;
+}
+main .banner .info-banner {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+main .banner .info-banner h1 {
+    margin: 0;
+}
+main .banner .info-banner p{
+    color: #000;
+}
+
+main .banner .info-banner button {
+    border-radius: 100px;
+    border: 0;
+    background-color: white;
+    font-size: 100%;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+main .banner .info-banner button:hover {
+    background-color: green;
+}
+
+main .banner .info-banner a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Tarjetas*/
+main .tratamientos-main {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5EBE0;
+    align-items: center;
+    width: 100%;
+
+}
+
+main .tratamientos-main .tarjetas-tratamientos {
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 100%;
+    padding: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+main .tratamientos-main .tarjetas-tratamientos a {
+    text-decoration: none;
+    color: white;
+    background-color: #D2AE6D;
+    border-radius: 10%;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 50px;
+}
+
+
+/*Cirugia*/
+.implante-cirugia-main {
+    background-color: #ffffff;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.implante-cirugia-main .info-implante-cirugia-main {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-inline: 15%;
+}
+
+.implante-cirugia-main .info-implante-cirugia-main a {
+    border-radius: 100px;
+    border: 0;
+    background-color: white;
+    font-size: 100%;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+}
+
+.implante-cirugia-main .antesdespues-implante-cirugia-main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    margin-bottom: 0;
+}
+
+.implante-cirugia-main .antesdespues-implante-cirugia-main img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.implante-cirugia-main .antesdespues-implante-cirugia-main .after {
+    clip-path: inset(0 50% 0 0);
+}
+
+.implante-cirugia-main .antesdespues-implante-cirugia-main .slider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: #fff;
+    cursor: ew-resize;
+    z-index: 2;
+    transform: translateX(-50%);
+    user-select: none;
+    -webkit-user-drag: none;
+
+}
+
+.antesdespues-implante-cirugia-main .slider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/*Nosotros*/
+
+main .nosotros-main {
+    width: 100%;
+    background-color: #DCCBBC;;
+    padding-top: 20px;
+    color: white;
+}
+
+main .nosotros-main .info {
+    text-align: center;
+    padding-inline: 25%;
+}
+
+main .nosotros-main .info h2 {
+    margin-top: 0;
+    
+}
+
+main .nosotros-main .img-nosotros {
+    width: 100%;
+    text-align: center;
+}
+main .nosotros-main .img-nosotros img{
+    max-width: 80%;
+}
 
 
 
 
-    /*footer*/
+/*footer*/
 
-    footer {
-        grid-area: footer;
-        background-color: #373435;
-        color: #D2AE6D;
-    }
+footer {
+    grid-area: footer;
+    background-color: #373435;
+    color: #D2AE6D;
+}
 
-    footer .logo-footer{
-        text-align: center;
-    }
+footer .logo-footer {
+    text-align: center;
+}
 
-    footer .contacto{
-        
-    }
+footer .contacto {}
 
-    footer .contacto div{
-        display: flex;
-        align-items: center;
-        width: 75%;
-    }
-    footer .contacto img{
-        width: 10%;
-        height: 10%;
-        
-    }
+footer .contacto div {
+    display: flex;
+    align-items: center;
+    width: 75%;
+}
 
-    footer .contacto div a{
-        text-decoration: none;
-        color: #D2AE6D;
-    }
+footer .contacto img {
+    width: 10%;
+    height: 10%;
+
+}
+
+footer .contacto div a {
+    text-decoration: none;
+    color: #D2AE6D;
+}
 
 
-    footer .redes-sociales{
-        text-align: center;
-    }
-    footer .redes-sociales img{
-        width: 10%;
-        height: 10%;  
-    }
+footer .redes-sociales {
+    text-align: center;
+}
+
+footer .redes-sociales img {
+    width: 10%;
+    height: 10%;
+}
