@@ -46,3 +46,4 @@ function moveSlider(e) {
   after.style.clipPath = `inset(0 ${100 - percent}% 0 0)`;
   slider.style.left = `${percent}%`;
 }
+
