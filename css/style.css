@@ -152,6 +152,13 @@ main .tratamientos-main .contenedor-tarjetas .tarjetas-tratamientos a {
     margin: 50px;
 }
 
+/*Ver mas*/
+main .vermas{
+    visibility:hidden;
+}
+main .vermas .mostrar{
+    visibility: visible;
+}
 
 /*Cirugia*/
 .implante-cirugia-main {
@@ -331,50 +338,35 @@ main .dudas-main .pregunta .respuesta {
 
 /*footer*/
 
-footer {
-    grid-area: footer;
-    background-color: #373435;
-    color: #4c402a;
+.footer {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 40px 20px;
+  font-size: 0.9rem;
 }
 
-
-footer .logo-footer {
-    text-align: center;
+.footer-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
 }
 
-footer .logo-footer img {
-    max-width: 40vh;
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
 }
 
-footer .contacto {
-    margin-left: 2vh;
+.footer-nav a {
+  text-decoration: none;
+  color: #333;
 }
 
-footer .contacto div {
-    display: flex;
-    align-items: center;
-    width: 75%;
-}
-
-footer .contacto img {
-    width: 10%;
-    height: 10%;
-
-}
-
-footer .contacto div a {
-    text-decoration: none;
-    color: #4c402a;
-}
-
-
-footer .redes-sociales {
-    text-align: center;
-}
-
-footer .redes-sociales img {
-    width: 10%;
-    height: 10%;
+.footer-legal {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #777;
 }
 
 
@@ -492,25 +484,6 @@ footer .redes-sociales img {
     }
 
 
-    footer {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 40vh;
-        padding-top: 10%;
-        justify-content: space-between;
-    }
-    footer div{
-        margin-inline: 20%;
-    }
 
-    footer .redes-sociales {
-        text-align: start;
-        margin-left: 10%;
-    }
-    footer .contacto{}
-    footer .redes-sociales img{
-        height: 30px;
-        width: 30px;
-    }
 }
+

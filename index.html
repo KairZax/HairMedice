@@ -16,7 +16,7 @@
 
   </header>
   <main>
-    <div class="banner">
+    <div id="inicio" class="banner">
       <div class="info-banner">
         <h1>Clinica de Medicina Capilar en Tandil</h1>
         <p>Mas de 15 de experiencia cuidando tu cabello</p>
@@ -26,36 +26,39 @@
       </div>
     </div>
 
-    <div class="tratamientos-main">
+    <div id="tratamientos" class="tratamientos-main">
 
       <h2>Tratamientos</h2>
       <div class="contenedor-tarjetas">
         <div class="tarjetas-tratamientos">
           <img src="images/tratamiento-jeringa.png" alt="">
           <h3>Plasma rico en plaquetas</h3>
-          <a href="">Mas info</a>
+          <a id="btn-plasma" href="">Mas info</a>
         </div>
         <div class="tarjetas-tratamientos">
           <img src="images/tratamiento-jeringa.png" alt="">
           <h3>Mesoterapia capilar</h3>
-          <a href="">Mas info</a>
+          <a id="btn-mesoterapia"  href="">Mas info</a>
         </div>
         <div class="tarjetas-tratamientos">
           <img src="images/tratamiento-frecuencias.png" alt="">
           <h3>Alta Frecuancia Capilar</h3>
-          <a href="">Mas info</a>
+          <a id="btn-frecuencia"  href="">Mas info</a>
         </div>
         <div class="tarjetas-tratamientos">
           <img src="images/tratamiento-suero.png" alt="">
           <h3>Sueroterapia</h3>
-          <a href="">Mas info</a>
+          <a id="btn-suero"  href="">Mas info</a>
         </div>
       </div>
 
     </div>
 
+    <div class="vermas">
+      <div><p id="texto-vermas"></p></div>
+    </div>
 
-    <div class="implante-cirugia-main">
+    <div id="cirugia" class="implante-cirugia-main">
       <div class="info-implante-cirugia-main">
         <h2>Cirugia de Implante Capilar</h2>
         <p>Tecnica FUE-minimamente invasiva, resultados naturales y permanentes.</p>
@@ -68,7 +71,7 @@
       </div>
     </div>
 
-    <div class="nosotros-main">
+    <div id="nosotros" class="nosotros-main">
       <div class="info">
         <h2>Nosotros</h2>
         <p>Somos el unico centro de medicina capilar de Tandil y la zona.</p>
@@ -97,7 +100,7 @@
 
     </div>
 
-    <div class="dudas-main">
+    <div id="dudas" class="dudas-main">
       <h2>Dudas Frecuentes</h2>
       <div class="pregunta">
         <button class="pregunta-titulo">¿El tratamiento capilar es doloroso?</button>
@@ -137,35 +140,48 @@
     </div>
 
   </main>
-  <footer>
-    <div class="logo-footer">
-      <img src="images/logo-nombre-footer.svg" alt="">
+<footer class="footer">
+  <div class="footer-contenedor">
+    
+    <div class="footer-logo">
+      <img src="images/logo-nombre-footer.svg" alt="Clínica Capilar Tandil">
     </div>
-    <div class="lista-secciones">
-      <ul>
-        <li><a href="">Tratamientos</a></li>
-        <li><a href="">Cirugia de implante capilar</a></li>
-        <li><a href="">Nosotros</a></li>
-        <li><a href="">Nuestro equipo</a></li>
-        <li><a href="">Dudas frecuentes</a></li>
-      </ul>
-    </div>
-        <div class="redes-sociales">
-      <img src="images/icono-instagram.png" alt="">
-      <img src="images/icono-facebook.png" alt="">
-    </div>
-    <div class="contacto">
-      <div><img src="images/icono-llamada.png" alt=""><a
-          href="https://wa.me/5491155551234?text=Hola%20quiero%20más%20información">0249 437-7718</a></div>
-      <div><img src="images/icono-ubicacion.png" alt=""><a
-          href="https://www.google.com/maps/place/HAIR+MEDICINE+TANDIL+%7C+Implante+Capilar+-+Mesoterapia+Capilar+-+Plasma+Rico+en+Plaquetas+Capilar+-+Sueroterapia/@-37.314652,-59.1399465,17z/data=!3m1!4b1!4m6!3m5!1s0x95911ff2ff0ec6b9:0x2b9f4933e7543793!8m2!3d-37.314652!4d-59.1399465!16s%2Fg%2F11vwgg8hsd?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D">Leandro
-          Alem 1495, Tandil, Buenos Aires</a></div>
-    </div>
-    <div>
-    </div>
-          © 2025 Medical Hair. Todos los derechos reservados.
-  </footer>
 
+    
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#tratamientos">Tratamientos</a></li>
+        <li><a href="#cirugia">Implante Capilar</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#dudas">Dudas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    
+    <div class="footer-contacto">
+      <p>📍 Tandil, Buenos Aires</p>
+      <p>📞 (0249) 444-1234</p>
+      <p>📧 info@clinicacapilar.com.ar</p>
+    </div>
+
+    
+    <div class="footer-redes">
+      <a href="#"><img src="images/icono-facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/icono-instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="images/icono-whatsapp.png" alt="WhatsApp"></a>
+    </div>
+  </div>
+
+ 
+  <div class="footer-legal">
+    <p>&copy; 2025 Clínica Capilar Tandil. Todos los derechos reservados.</p>
+    <p><a href="#privacidad">Política de privacidad</a></p>
+  </div>
+</footer>
+
+  <script src="js/verMas.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/script.js"></script>
   <script src="js/dudas.js"></script>
