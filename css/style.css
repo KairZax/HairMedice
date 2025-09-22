@@ -325,7 +325,7 @@ main .dudas-main .pregunta .pregunta-titulo {
 }
 
 main .dudas-main .pregunta .pregunta-titulo:hover {
-    color: #0077cc;
+    color: #D2AE6D;
 }
 
 main .dudas-main .pregunta .respuesta {
@@ -333,6 +333,15 @@ main .dudas-main .pregunta .respuesta {
     overflow: hidden;
     transition: max-height 0.5s ease;
     display: block;
+}
+.flecha {
+  display: inline-block;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.flecha.girar {
+  transform: rotate(180deg);
 }
 
 
